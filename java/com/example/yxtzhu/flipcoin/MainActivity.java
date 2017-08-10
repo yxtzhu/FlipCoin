@@ -1,7 +1,5 @@
 package com.example.yxtzhu.flipcoin;
 
-import android.animation.ObjectAnimator;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //Randmly generate an integer between 0 and 1
+    //Randomly generate an integer between 0 and 1
     public void coinflip(View view){
         String result = (Math.random()>=0.5) ? "HEAD" : "TAIL";
         TextView textView = (TextView) findViewById(R.id.textView);
